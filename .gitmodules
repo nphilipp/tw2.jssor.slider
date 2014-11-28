@@ -1,0 +1,3 @@
+[submodule "jssor/slider"]
+	path = jssor/slider
+	url = https://github.com/jssor/slider.git

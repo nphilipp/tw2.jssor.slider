@@ -1,0 +1,19 @@
+<div xmlns:py="http://genshi.edgewall.org/" py:strip="True" py:with="cls='jssorb' + w.id">
+  <style>
+    .$cls div, .$cls div:hover, .$cls .av
+    {
+      filter: alpha(opacity=$w._opacity_percent%);
+      opacity: $w.opacity;
+      overflow: hidden;
+      cursor: $w.cursor;
+      border: #000 1px solid;
+    }
+    .$cls div { background-color: $w.normcolor; }
+    .$cls div:hover, .$cls .av:hover { background-color: $w.mouseovercolor; }
+    .$cls .av { background-color: $w.activecolor; }
+    .$cls .dn, .$cls .dn:hover { background-color: $w.mousedowncolor; }
+  </style>
+  <div u="navigator" class="$cls" style="position: absolute; $w._vertpos; $w._horpos;">
+    <div u="prototype" style="POSITION: absolute; WIDTH: $w.bullet_width; HEIGHT: $w.bullet_height;"></div>
+  </div>
+</div>

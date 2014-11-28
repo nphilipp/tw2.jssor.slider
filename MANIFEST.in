@@ -1,0 +1,9 @@
+include tw2/jssor/slider/static/*.txt
+include tw2/jssor/slider/static/js/jssor*.js
+include tw2/jssor/slider/static/img/[a-z][0-9][0-9].png
+include tw2/jssor/slider/static/img/close.png
+include tw2/jssor/slider/static/img/play.png
+include tw2/jssor/slider/static/img/loading.gif
+include tw2/jssor/slider/static/img/loading2.gif
+recursive-include tw2/jssor/slider/templates *.py
+recursive-include tw2/jssor/slider/templates *.html
