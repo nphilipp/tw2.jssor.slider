@@ -2,7 +2,7 @@
 #
 # tw2.jssor.slider - a jssor slider widget
 #
-# Copyright © 2014 Nils Philippsen <nils@tiptoe.de>
+# Copyright © 2014, 2015 Nils Philippsen <nils@tiptoe.de>
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -145,7 +145,7 @@ class JssorSlider(Widget):
 
     def dict_to_js(self, options_dict):
         options_strs = []
-        for k, v in options_dict.iteritems():
+        for k, v in options_dict.items():
             if isinstance(v, dict):
                 v_str = self.dict_to_js(v)
             elif isinstance(v, bool):
