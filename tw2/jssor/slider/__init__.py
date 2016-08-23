@@ -129,9 +129,9 @@ class JssorSlider(Widget):
 
     ScaleSlider();
 
-    $(window).bind('load', ScaleSlider);
-    $(window).bind('resize', ScaleSlider);
-    $(window).bind('orientationchange', ScaleSlider);"""
+    $(window).on('load', ScaleSlider);
+    $(window).on('resize', ScaleSlider);
+    $(window).on('orientationchange', ScaleSlider);"""
 
     _js_tmpl_begin = """jQuery(document).ready(function ($) {{
     var options = {options};
