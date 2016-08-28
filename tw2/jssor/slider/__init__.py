@@ -30,13 +30,12 @@ from tw2.jquery.base import jquery_js, jQuery
 from tw2.jquery.version import JSLinkMixin
 
 __all__ = (
-    "jssor_js", "jssor_slider_js", "JssorBulletNavigator", "JssorSlider")
+    "jssor_slider_js", "JssorBulletNavigator", "JssorSlider")
 
 # JS Links
 
-jssor_js = JSLink(modname=__name__, filename="static/js/jssor.js")
 jssor_slider_js = JSLink(
-    modname=__name__, filename="static/js/jssor.slider.js")
+    modname=__name__, filename="static/js/jssor.slider.min.js")
 
 # Other resources
 
@@ -108,7 +107,7 @@ class JssorSlider(Widget):
 
     template = None
 
-    resources = [jquery_js, jssor_js, jssor_slider_js]
+    resources = [jquery_js, jssor_slider_js]
 
     container = Param("id of the slider container")
 
