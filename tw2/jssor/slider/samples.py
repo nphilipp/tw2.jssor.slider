@@ -35,7 +35,7 @@ class DemoJssorSlider(JssorSlider):
         static.prepare()
 
         img_div = """        <div>
-            <img u="img" src="{static.link}/img/landscape/{imgno:02}.jpg" />
+            <img data-u="img" src="{static.link}/img/landscape/{imgno:02}.jpg" alt="" />
         </div>"""
 
         img_divs = "\n".join(img_div.format(static=static, imgno=i+1)
@@ -43,8 +43,9 @@ class DemoJssorSlider(JssorSlider):
 
         output_tmpl = """<div id="slider_container"
     style="position: relative; top: 0px; left: 0px; width: 400px; height: 300px;">
-    <div u="slides" style="cursor: move; position: absolute; overflow: hidden;
-                           left: 0px; top: 0px; width: 400px; height: 300px;">
+    <div data-u="slides" style="cursor: move; position: absolute;
+                                overflow: hidden; left: 0px; top: 0px;
+                                width: 400px; height: 300px;">
 {img_divs}
     </div>
 </div>"""
