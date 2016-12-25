@@ -46,6 +46,7 @@ class JssorBulletNavigator(Widget):
 
     bullet_width = Param("width of the bullet", default="12px")
     bullet_height = Param("height of the bullet", default="12px")
+    border_width = Param("border width of the bullet", default="1px")
 
     horizontal_position = Param(
             "horizontal position (left, center, right)",
